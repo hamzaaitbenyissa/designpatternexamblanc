@@ -16,4 +16,13 @@ public class Rectangle extends Figure {
     public void afficher(String msg) {
         super.afficher(msg);
     }
+
+    @Override
+    public void update(DefaultSettings defaultSettings) {
+        super.update(defaultSettings);
+        System.out.println("Rectangle  : Thank you ❤  I will switch mine too ");
+        this.setSettings(defaultSettings.getState());
+        System.out.println("My new Settings : ");
+        System.out.println(settings);
+    }
 }

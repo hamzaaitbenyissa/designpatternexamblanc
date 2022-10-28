@@ -12,7 +12,7 @@ public class Groupe extends Figure {
     }
 
     public void ajouterfigure(Figure figure) {
-        figure.level=this.level+1;
+        figure.level = this.level + 1;
         figures.add(figure);
     }
 
@@ -29,4 +29,5 @@ public class Groupe extends Figure {
                 }
         );
     }
+
 }

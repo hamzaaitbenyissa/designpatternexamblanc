@@ -15,4 +15,12 @@ public class Circle extends Figure {
     public void afficher(String msg) {
         super.afficher(msg);
     }
+
+    @Override
+    public void update(DefaultSettings defaultSettings) {
+        super.update(defaultSettings);
+        System.out.println("Circle : Thank you ❤ but I don't care 😅 ");
+        System.out.println("My Settings will stay as they are : ");
+        System.out.println(settings);
+    }
 }
