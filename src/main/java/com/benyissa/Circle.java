@@ -12,7 +12,7 @@ public class Circle extends Figure {
     }
 
     @Override
-    void afficher(String msg) {
+    public void afficher(String msg) {
         super.afficher(msg);
     }
 }

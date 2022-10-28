@@ -1,6 +1,8 @@
-package com.benyissa;
-public class Main {
+package com.benyissa.App;
 
+import com.benyissa.*;
+
+public class Main {
 
     public static void main(String[] args) {
         System.out.println("let's test our application :");
@@ -10,6 +12,7 @@ public class Main {
 //        let's create two circles first
         Circle circle1 = new Circle(5, new Point(0, 0));
         Circle circle2 = new Circle(5, new Point(1, 0));
+
 
 //        let's group them
         Groupe groupe1 = new Groupe();
@@ -30,6 +33,13 @@ public class Main {
         dessin.ajouterfigure(groupe1);
         dessin.ajouterfigure(groupe2);
 //        yeep here we will see the content of our design
-        dessin.afficher();
+//        dessin.afficher();
+
+        System.out.println("lets add the groupe 2 to group 1 and see the new design ");
+        Dessin dessin2 = new Dessin();
+        groupe2.ajouterfigure(groupe1);
+        dessin2.ajouterfigure(groupe2);
+        dessin2.afficher();
+
     }
 }

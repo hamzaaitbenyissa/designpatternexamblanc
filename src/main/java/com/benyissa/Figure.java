@@ -5,16 +5,20 @@ import java.util.stream.Stream;
 public abstract class Figure {
     double perimetre;
     double interace;
+    protected int level = 1;
 
     public Figure(double perimetre, double interace) {
         this.perimetre = perimetre;
         this.interace = interace;
     }
 
+
+
+
     public Figure() {
     }
 
-    void afficher(String msg) {
+    public void afficher(String msg) {
         System.out.println("      " + msg);
     }
 }

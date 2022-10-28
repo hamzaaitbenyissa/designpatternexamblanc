@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Groupe extends Figure {
-    List<Figure> figures;
+    public List<Figure> figures;
+
 
     public Groupe() {
-
         figures = new ArrayList<>();
     }
 
-    void ajouterfigure(Figure figure) {
+    public void ajouterfigure(Figure figure) {
+        figure.level=this.level+1;
         figures.add(figure);
     }
 
@@ -20,11 +21,11 @@ public class Groupe extends Figure {
     }
 
     @Override
-    void afficher(String msg) {
+    public void afficher(String msg) {
         super.afficher(msg);
         figures.forEach(figure -> {
-                    System.out.print("      ");
-                    figure.afficher(figure.getClass().getSimpleName().toString());
+                    System.out.print("      ".repeat(this.level));
+                    figure.afficher(figure.getClass().getSimpleName());
                 }
         );
     }

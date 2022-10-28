@@ -6,7 +6,7 @@ import java.util.List;
 public class Dessin {
     List<Figure> figures = new ArrayList<>();
 
-    void ajouterfigure(Figure figure) {
+    public void ajouterfigure(Figure figure) {
         figures.add(figure);
     }
 
@@ -14,9 +14,9 @@ public class Dessin {
         figures.remove(figure);
     }
 
-    void afficher() {
+    public void afficher() {
         System.out.println("Dessin");
-        figures.forEach(figure -> figure.afficher(figure.getClass().getSimpleName().toString()));
+        figures.forEach(figure -> figure.afficher(figure.getClass().getSimpleName()));
     }
 
     void serialiser() {
