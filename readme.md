@@ -22,6 +22,8 @@ so the group of figures will be treated in the same way as a single instance.
 ```java
 package com.benyissa;
 
+import com.benyissa.app.*;
+
 public class Main {
 
 

@@ -1,4 +1,4 @@
-package com.benyissa;
+package com.benyissa.app;
 
 
 public class Circle extends Figure {

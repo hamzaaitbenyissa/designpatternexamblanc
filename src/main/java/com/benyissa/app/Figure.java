@@ -1,4 +1,4 @@
-package com.benyissa;
+package com.benyissa.app;
 
 import java.util.stream.Stream;
 

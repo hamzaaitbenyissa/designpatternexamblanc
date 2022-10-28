@@ -1,8 +1,8 @@
-package com.benyissa.App;
+package com.benyissa.tests.composite;
 
-import com.benyissa.*;
+import com.benyissa.app.*;
 
-public class Main {
+public class Test1 {
 
     public static void main(String[] args) {
         System.out.println("let's test our application :");
@@ -33,13 +33,8 @@ public class Main {
         dessin.ajouterfigure(groupe1);
         dessin.ajouterfigure(groupe2);
 //        yeep here we will see the content of our design
-//        dessin.afficher();
+        dessin.afficher();
 
-        System.out.println("lets add the groupe 2 to group 1 and see the new design ");
-        Dessin dessin2 = new Dessin();
-        groupe2.ajouterfigure(groupe1);
-        dessin2.ajouterfigure(groupe2);
-        dessin2.afficher();
 
     }
 }
