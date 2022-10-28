@@ -61,7 +61,8 @@ public class Main {
 
 ```
 
-Resultat :
+Result :
+
 
 <br>
 <img src="./images/test1.png" width="1000px">
@@ -78,9 +79,32 @@ Resultat :
 
 ```
 
-Resultat :
-
+Result :
 
 <br>
 <img src="./images/test2.png" width="1000px">
+<br>
+
+### Test 3:
+We know that our design will be treated using many ways as required 🧐
+
+Yeah It's a strategy pattern, our design will be linked with the TreatmentStrategy interface and each time we can set the wanted implementation to treat it 🤷‍♂️ 
+
+```java
+public static void main(String[] args) {
+        Dessin dessin = new Dessin();
+        System.out.println("Design Created ");
+        System.out.println("Let's treat it with the first Algorithm ");
+        dessin.setTreatmentStrategy(new TreatmentStrategyImpl1());
+        dessin.applyTreatment();
+        System.out.println("Logic changed, right now we need the second Algorithm ");
+        dessin.setTreatmentStrategy(new TreatmentStrategyImpl2());
+        dessin.applyTreatment();
+        }
+```
+
+Result :
+
+<br>
+<img src="./images/test3.png" width="1000px">
 <br>
